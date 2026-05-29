@@ -1,58 +1,28 @@
-# IS Test – Banco de preguntas tipo test
+# quiz-is 🧠
 
-Repositorio con un **banco de preguntas tipo test de la asignatura IS (Ingeniería del Software)**, preparado para su uso como **herramienta de práctica y autoevaluación**, incluyendo despliegue como **web estática (GitHub Pages)**.
+Interactive self-assessment test engine for **IS (Ingeniería del Software / Software Engineering)**.
 
-## Contenido
-- **214 preguntas tipo test**.
-- Preguntas basadas en los **bloques principales del temario de Ingeniería del Software**:
-  - introducción a la ingeniería del software,
-  - procesos del software,
-  - principios que guían la práctica,
-  - ingeniería de requisitos,
-  - modelado, análisis y diseño UML.
-- Cada pregunta incluye:
-  - opciones de respuesta,
-  - respuesta correcta,
-  - campo de justificación (presente en parte del banco y ampliable).
+This repository contains an original self-assessment platform and curated question set created by the repository owner with AI-assisted content generation, validation and refinement workflows.
 
-## Origen del contenido
-- Preguntas recopiladas a partir de **materiales docentes y tests tipo** de la asignatura Ingeniería del Software.
-- El contenido ha sido **estructurado en formato JSON** a partir de documentos originales y **adaptado con apoyo de herramientas de inteligencia artificial**, manteniendo fidelidad al temario.
-- Las justificaciones incluidas reflejan el contenido original cuando estaba disponible.
+Part of the DevQuiz-Hub ecosystem.
 
-## Uso
-Repositorio orientado a:
-- estudio individual,
-- repaso de conceptos teóricos clave,
-- práctica intensiva tipo test,
-- simulación de exámenes.
+## 📚 Core Topics Covered
 
-La aplicación funciona como una **web estática** (HTML + JavaScript + JSON),  
-sin backend ni dependencias externas.
+* **Block 1**: Software Engineering foundations, software crisis, software processes and software quality.
+* **Block 2**: Software lifecycle models, waterfall model, iterative development and software methodologies.
+* **Block 3**: UML modeling, software architecture, requirements engineering and system design.
+* **Block 4**: Object-Oriented Programming concepts including inheritance, polymorphism, encapsulation and abstraction.
+* **Block 5**: Web applications, software maintenance, legacy systems and software evolution.
+* **Block 6**: Risk management, umbrella activities and engineering best practices.
 
-## Configuración del test
-El comportamiento del test permite:
-- barajado de preguntas,
-- barajado de opciones,
-- visualización del progreso,
-- visualización de explicaciones tras responder.
+## 🛠️ Data Contract & Logic
 
-La corrección se realiza por **texto de la respuesta correcta**, por lo que el orden de las opciones no afecta a la validez del resultado.
+This repository implements the standardized architecture of the organization:
 
-## Aviso
-Este material es **exclusivamente educativo** y **no constituye un banco oficial de examen**.
+* **`is_questions.json`**: Holds the structured question schema, metadata and explanatory content.
+* **`quiz.js`**: Core asynchronous engine handling in-place shuffling, dynamic data fetching and client-side state management.
+* **`index.html`**: Zero-dependency SPA frontend built with responsive modern CSS variables.
 
-No se garantiza coincidencia exacta con exámenes reales.  
-Las respuestas **no han sido validadas de forma oficial** y pueden contener errores puntuales.
+## 🚀 Live Demo
 
-Se recomienda **contrastar siempre con el temario oficial y los materiales docentes**.
-
-## Licencia
-Este repositorio se publica bajo licencia **Creative Commons BY-NC-SA 4.0**  
-(Atribución – No Comercial – Compartir Igual).
-
-El contenido puede utilizarse y compartirse con fines educativos,  
-pero **no puede utilizarse con fines comerciales**.
-
----
-Proyecto personal de estudio.
+🔗 **https://reichgp.github.io/quiz-is/**
